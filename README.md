@@ -1,4 +1,4 @@
-# eds-portfolio
+# Eds-portfolio
 
 # Landing page
 
@@ -11,3 +11,17 @@ and css animation which transitions the nav buttons to orange
 
 
 # Landing-page 
+page with an intro and an image
+
+# about me page
+brief intro about myself, using grid and media reqs to make responsive,
+link to cv,a gain fully responsiv. 
+
+# skills
+
+Two unordered lists
+used font awesome 
+ ``` npm install --save @fortawesome/fontawesome-free ```
+# Projects 
+
+# contact-me 

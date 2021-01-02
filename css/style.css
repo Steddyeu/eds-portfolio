@@ -32,7 +32,7 @@
 
 #navbar-logo {
   background-color: #ff8177;
-  background-image: linear-gradient(to bottom, #f12711, #f5af19);
+  background: linear-gradient(to top, #ba8b02, #181818);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -67,7 +67,7 @@
 }
 
 .navbar-links:hover {
-  color: red;
+  color: rgb(148, 116, 116);
   transition: all 0.3s ease;
 }
 
@@ -350,7 +350,6 @@
 
 .skills-desc h2 {
   font-size: 16px;
-  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -358,7 +357,42 @@
   line-height: 2;
 }
 
-.macbook {
-  height: 700px;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
+@media screen and (max-width: 468px) {
+  .skills-container {
+    padding-top: 100px;
+    padding-bottom: 160px;
+    padding-left: 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 900px;
+  }
+
+  .skills-container {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .skills-left {
+    padding: 0 24px;
+  }
+
+  .skills-text {
+    margin-top: 40px;
+  }
+
+  .skills-text img {
+    margin-right: 16px;
+  }
+}
+
+
+/* PROJECTS */
+
