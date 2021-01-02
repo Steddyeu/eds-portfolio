@@ -150,7 +150,7 @@
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-} 
+}
 
 /* Header */
 
@@ -279,10 +279,33 @@
 }
 
 @media screen and (max-width: 468px) {
-
-  .main-text h2, .main-text2 h2{
+  .main-text h2,
+  .main-text2 h2 {
     margin-top: 30px;
   }
+}
+
+#about-me-btn {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+  margin-right: 150px;
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px;
+  background: black;
+  transition: all 0.3s ease;
+}
+
+#about-me-btn:hover {
+  background-color: rgb(29, 28, 28);
+  border: solid;
+  color: greenyellow;
+  border-color: greenyellow;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 /* Skills */
@@ -290,10 +313,52 @@
 .skills {
   background: paleturquoise;
   color: #131313;
-position: relative;
+  position: relative;
 }
 
 .skills-container {
   background-attachment: black;
   padding-top: 100px;
+}
+
+.skills-container h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 700px;
+}
+
+.skills-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+
+.skills-text {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skills-text img {
+  margin-right: 50px;
+}
+
+.skills-desc h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.skills-desc {
+  line-height: 2;
+}
+
+.macbook {
+  height: 700px;
+  width: 100%;
 }
