@@ -232,9 +232,10 @@
 }
 
 .main-content {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px;
+  grid-template-rows: 700px; */
+  dis
 }
 
 .main-text,
@@ -260,6 +261,13 @@
 }
 
 @media screen and (max-width: 1000) {
+  .main-text h2,
+  .main-text2 h2 {
+    margin-top: 30px;
+flex-direction: column;    
+  }
+}
+
   .main-section {
     padding: 30px;
   }
@@ -395,4 +403,186 @@
 
 
 /* PROJECTS */
+ .projects {
+background: rgb(17, 1, 19); 
+color: whitesmoke;
+}
 
+.projects-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+}
+
+.projects-container h1 {
+  font-size: 110px;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.projects-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proj-img{
+  height: 100%;
+  width: 100%;
+}
+
+.projects-right h2 {
+margin-bottom: 40px;
+font-size: 30px;
+}
+
+.projects-right p {
+margin-bottom: 50px;
+line-height: 2.5;
+}
+
+.projects-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects-list  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 32px 64px;
+}
+
+@media screen and (max-width: 1368px) {
+  .projects-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects{
+    padding: 30px;
+  }
+
+  .projects-container{
+    font-size: 30px;
+  }
+
+  .projects-main{
+    grid-template-columns: 1fr;
+  }
+
+  .projects-container{
+    padding-left: 0px;
+  }
+
+  .projects-right{
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 468) {
+  .projects{
+    padding: 10px;
+  }
+
+  .projects-container h1{
+    font-size: 20px;
+  }
+
+}
+/* -----------------SLIDING CARDS--------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #17141d;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-list {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+
+.card-list::-webkit-scrollbar {
+width: 10px;
+} 
+
+ .card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+} 
+ 
+.card-list::-webkit-scrollbar-track {
+      background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+
+}
+
+.card:hover{
+  transform: translateY(-1rem);
+}
+/* general sibling combinator */
+.card:hover~.card {
+  transform: translateX(130px);
+}
+
+
+/* :not, negation pseudo class */
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card h2:hover {
+   background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    background-clip: text;
+    border-color: white;
+}
+
+.tags a {
+  text-decoration: none;
+  color: green;
+}
+
+/* -----------------SLIDING CARDS--------------------------------------- */
+
+/* CONTACT PAGE*/
+
+.contact-me {
+  background: linear-gradient(to bottom, #000000, #434343);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.image2 {
+  width: auto;
+  height: 200px;
+}
+
+h3 {
+  width: 100%;
+}
