@@ -102,19 +102,11 @@
     z-index: 99;
     height: 60vh;
     font-size: 1.6rem;
-  }
+  } 
 
-  #navbar-logo {
+   #navbar-logo {
     padding-left: 25px;
-  }
-
-  .navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-  }
+  } 
 
   .navbar-item {
     width: 100%;
@@ -155,7 +147,7 @@
 /* Header */
 
 .landing-page {
-  background-color: rgb(235, 229, 229);
+  background-color: rgb(248, 246, 246);
   padding: 0 60px;
   color: black;
 }
@@ -178,8 +170,13 @@
 }
 
 .left-column p {
-  font-size: 18px;
+  text-align: center;
+  font-size: 30px;
   line-height: 2.3;
+}
+
+#header-line{
+color: rgb(82, 79, 79);
 }
 
 .right-column {
@@ -215,11 +212,13 @@
 
 .main-section {
   padding: 60px 60px;
-  background-color: honeydew;
+  background-color: rgb(209, 206, 206);
   color: black;
 }
 
 .main-container {
+  padding-top: 60px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -229,13 +228,6 @@
   font-size: 110px;
   color: black;
   margin-bottom: 32px;
-}
-
-.main-content {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px; */
-  dis
 }
 
 .main-text,
@@ -260,30 +252,29 @@
   height: 600px;
 }
 
-@media screen and (max-width: 1000) {
+@media screen and (max-width: 1000px) {
   .main-text h2,
   .main-text2 h2 {
     margin-top: 30px;
-flex-direction: column;    
+    flex-direction: column;
   }
 }
 
-  .main-section {
-    padding: 30px;
-  }
+.main-section {
+  padding: 30px;
+}
 
-  .main-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+.main-content {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
 
-  .main-text2 {
-    margin-top: 40px;
-  }
+.main-text2 {
+  margin-top: 40px;
+}
 
-  .main-container h1 {
-    font-size: 70px;
-  }
+.main-container h1 {
+  font-size: 70px;
 }
 
 @media screen and (max-width: 468px) {
@@ -305,6 +296,7 @@ flex-direction: column;
   padding: 10px 10px 10px 10px;
   background: black;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 #about-me-btn:hover {
@@ -319,8 +311,8 @@ flex-direction: column;
 /* Skills */
 
 .skills {
-  background: paleturquoise;
-  color: #131313;
+  background: rgb(28, 29, 29);
+  color: rgb(219, 214, 214);
   position: relative;
 }
 
@@ -330,59 +322,44 @@ flex-direction: column;
 }
 
 .skills-container h1 {
+  color: rgb(219, 214, 214);
   text-align: center;
   font-size: 100px;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 700px;
+  text-align: center;
 }
 
-.skills-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 50px;
-}
-
-.skills-text {
-  display: flex;
-  align-items: flex-start;
-}
-
-.skills-text img {
-  margin-right: 50px;
-}
-
-.skills-desc h2 {
-  font-size: 16px;
-  margin-bottom: 16px;
+.list-item {
+  margin: 30px 0;
 }
 
 .skills-desc {
-  line-height: 2;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#left-list {
+  padding-right: 200px;
+}
+
+#right-list {
+  color: rgb(129, 129, 129);
+  font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 468px) {
-  .skills-container {
-    padding-top: 100px;
-    padding-bottom: 160px;
-    padding-left: 16px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 900px;
-  }
-
   .skills-container {
     text-align: center;
     margin-bottom: 100px;
@@ -395,17 +372,12 @@ flex-direction: column;
   .skills-text {
     margin-top: 40px;
   }
-
-  .skills-text img {
-    margin-right: 16px;
-  }
 }
 
-
 /* PROJECTS */
- .projects {
-background: rgb(17, 1, 19); 
-color: whitesmoke;
+.projects {
+  background: rgb(17, 1, 19);
+  color: whitesmoke;
 }
 
 .projects-container {
@@ -425,19 +397,19 @@ color: whitesmoke;
   grid-template-columns: 1fr 1fr;
 }
 
-.proj-img{
+.proj-img {
   height: 100%;
   width: 100%;
 }
 
 .projects-right h2 {
-margin-bottom: 40px;
-font-size: 30px;
+  margin-bottom: 40px;
+  font-size: 30px;
 }
 
 .projects-right p {
-margin-bottom: 50px;
-line-height: 2.5;
+  margin-bottom: 50px;
+  line-height: 2.5;
 }
 
 .projects-right a {
@@ -445,7 +417,7 @@ line-height: 2.5;
   text-decoration: none;
 }
 
-.projects-list  {
+.projects-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -459,52 +431,45 @@ line-height: 2.5;
 }
 
 @media screen and (max-width: 1000px) {
-  .projects{
+  .projects {
     padding: 30px;
   }
 
-  .projects-container{
+  .projects-container {
     font-size: 30px;
   }
 
-  .projects-main{
+  .projects-main {
     grid-template-columns: 1fr;
   }
 
-  .projects-container{
+  .projects-container {
     padding-left: 0px;
   }
 
-  .projects-right{
+  .projects-right {
     margin-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 468) {
-  .projects{
+@media screen and (max-width: 468px) {
+  .projects {
     padding: 10px;
   }
 
-  .projects-container h1{
+  .projects-container h1 {
     font-size: 20px;
   }
-
 }
 /* -----------------SLIDING CARDS--------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #17141d;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 .card-list {
   display: flex;
   overflow-x: scroll;
+  margin-top: 50px;
+  padding-top: 30px;
 }
 
 .card {
@@ -521,46 +486,44 @@ body {
   background: #17141d;
   box-shadow: -1rem 0 3rem #000;
 
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .card-list::-webkit-scrollbar {
-width: 10px;
-} 
+  width: 10px;
+}
 
- .card-list::-webkit-scrollbar-thumb {
+.card-list::-webkit-scrollbar-thumb {
   background: #201c29;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-} 
- 
-.card-list::-webkit-scrollbar-track {
-      background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
-
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.card:hover{
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.card:hover {
   transform: translateY(-1rem);
 }
-/* general sibling combinator */
-.card:hover~.card {
+
+.card:hover ~ .card {
   transform: translateX(130px);
 }
 
-
-/* :not, negation pseudo class */
 .card:not(:first-child) {
   margin-left: -130px;
 }
 
 .card h2:hover {
-   background: linear-gradient(90deg,#ff8a00,#e52e71);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-box-decoration-break: clone;
-    background-clip: text;
-    border-color: white;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
 }
 
 .tags a {
@@ -568,21 +531,73 @@ width: 10px;
   color: green;
 }
 
-/* -----------------SLIDING CARDS--------------------------------------- */
+@media screen and (max-width: 1000px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+
+  card:hover {
+  transform: translateY(20rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(10px);
+}
+
+.card:not(:first-child) {
+  margin-left: 0px;
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+}
+
+/* -----------------SLIDING CARDS^--------------------------------------- */
 
 /* CONTACT PAGE*/
 
-.contact-me {
-  background: linear-gradient(to bottom, #000000, #434343);
-  color: whitesmoke;
+.footer-section {
+  padding: 60px 60px;
+  background-color: rgb(209, 206, 206);
+  color: black;
+}
+
+.footer-container {
+  padding-top: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.image2 {
-  width: auto;
-  height: 200px;
+.footer-container h1 {
+  margin-top: 30px;
+  font-size: 110px;
+  color: black;
+  margin-bottom: 32px;
 }
 
-h3 {
-  width: 100%;
+.contact-text {
+  font-size: 60px;
+  color: #16070c;
+}
+
+#form-btn {
+  color: #1c142e;
+  transition: all 0.3s ease;
+}
+
+#form-btn:hover {
+  color: green;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #email {
+    font-size: 40px;
+  }
 }
