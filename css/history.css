@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: rgb(32, 30, 30);
+  background-color: rgb(17, 0, 17);
   margin-top: -67px;
   padding-bottom: -50px;
   border: none;
@@ -14,7 +14,7 @@ header {
 }
 
 #title {
-  color: floralwhite;
+  color: rgb(202, 200, 195);
   font-size: 100px;
 }
 /* RETURN TO PORTFOLIO BUTTONS */
@@ -30,8 +30,8 @@ header {
 }
 
 .back-btn:hover {
-  border-color: greenyellow;
-  color: green;
+  border-color: silver;
+  color: gray;
   transition: all 0.3s ease;
 }
 /* -------------------------------- */
@@ -63,7 +63,7 @@ header {
 }
 
 .card:hover {
-  border-color: greenyellow;
+  border-color: goldenrod;
   border-width: 3px;
   transition: all 0.3s ease;
 }

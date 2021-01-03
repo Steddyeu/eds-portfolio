@@ -118,29 +118,9 @@ transition: all 0.3s ease;
     width: 100%;
     display: table;
   }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-  }
-
   .navbar-toggle .bar {
     display: block;
     cursor: pointer;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
@@ -302,8 +282,8 @@ color: rgb(82, 79, 79);
 #about-me-btn:hover {
   background-color: rgb(29, 28, 28);
   border: solid;
-  color: greenyellow;
-  border-color: greenyellow;
+  color: grey;
+  border-color: silver;
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
