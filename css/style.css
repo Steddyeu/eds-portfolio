@@ -32,7 +32,7 @@
 
 #navbar-logo {
   background-color: #ff8177;
-  background: linear-gradient(to top, #ba8b02, #181818);
+   background: linear-gradient(to bottom, #000000, #0f9b0f);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -67,8 +67,8 @@
 }
 
 .navbar-links:hover {
-  color: rgb(148, 116, 116);
-  transition: all 0.3s ease;
+color: green;
+transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 960px) {
@@ -339,16 +339,25 @@ color: rgb(82, 79, 79);
   padding-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-#left-list {
-  padding-right: 200px;
+  justify-content: space-around;
 }
 
 #right-list {
-  color: rgb(129, 129, 129);
+  color: rgb(224, 220, 220);
   font-size: 30px;
+  background-color: rgb(44, 42, 42);
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+#dev-icon {
+  font-size: 100px;
+}
+
+#right-list p{
+  color: rgb(226, 200, 200);
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -357,6 +366,15 @@ color: rgb(82, 79, 79);
     display: flex;
     flex-direction: column;
   }
+
+  .skills-desc {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 }
 
 @media screen and (max-width: 468px) {
@@ -367,11 +385,17 @@ color: rgb(82, 79, 79);
 
   .skills-left {
     padding: 0 24px;
+    
   }
 
   .skills-text {
     margin-top: 40px;
   }
+
+  .left-list{
+    margin-right: 500px;
+  }
+
 }
 
 /* PROJECTS */
@@ -400,21 +424,50 @@ color: rgb(82, 79, 79);
 .proj-img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+}
+.projects-right{
+  margin-left: 10px;
+
 }
 
 .projects-right h2 {
   margin-bottom: 40px;
   font-size: 30px;
+   background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
 }
 
 .projects-right p {
   margin-bottom: 50px;
   line-height: 2.5;
+  color: rgb(212, 204, 204);
 }
 
 .projects-right a {
-  color: white;
+  color:white;
+  background-color: rgb(2, 85, 2);
   text-decoration: none;
+   border: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  outline: none;
+    transition: all 0.3s ease;
+}
+
+.projects-right a:hover {
+  border-color: greenyellow;
+  padding: 15px 15px 15px 15px;
+    transition: all 0.3s ease;
+}
+
+#proj-slide-text{
+  color:orangered;
 }
 
 .projects-list {
@@ -477,15 +530,13 @@ color: rgb(82, 79, 79);
   text-align: center;
   position: relative;
   flex-direction: column;
-  height: 350px;
+  height: 500px;
   width: 400px;
   min-width: 250px;
   padding: 1.5rem;
-
   border-radius: 16px;
   background: #17141d;
   box-shadow: -1rem 0 3rem #000;
-
   transition: 0.2s;
 }
 
@@ -528,10 +579,21 @@ color: rgb(82, 79, 79);
 
 .tags a {
   text-decoration: none;
-  color: green;
+  color: whitesmoke;
+  background-color: rgb(2, 85, 2);
+  border-radius: 10px;
+  padding: 3px 3px 3px 3px ;
 }
 
+#slide-lang {
+color: orangered;  
+}
 @media screen and (max-width: 1000px) {
+  .card{
+font-size: 20px;
+height: 600px;
+  }
+
   .card-list {
     display: flex;
     flex-direction: column;
@@ -553,6 +615,12 @@ color: rgb(82, 79, 79);
 .card-list::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
+}
+
+.card-info img {
+  width:200px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 /* -----------------SLIDING CARDS^--------------------------------------- */
@@ -591,7 +659,7 @@ color: rgb(82, 79, 79);
 }
 
 #form-btn:hover {
-  color: green;
+  color: rgb(235, 96, 46);
   transition: all 0.3s ease;
 }
 
