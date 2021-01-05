@@ -7,6 +7,9 @@
   list-style-type: none;
 }
 
+
+/* Nav-Bar */
+
 .navbar {
   background: rgb(43, 44, 44);
   height: 80px;
@@ -46,15 +49,6 @@
   transition: all 0.3s ease;
 }
 
-.navbar-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-.navbar-item {
-  height: 80px;
-}
-
 .navbar-links {
   color: whitesmoke;
   display: flex;
@@ -82,34 +76,8 @@
     padding: 0;
   }
 
-  .navbar-menu {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: -1;
-  }
-
-  .navbar-menu.active {
-    background: #131313;
-    top: 100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 60vh;
-    font-size: 1.6rem;
-  }
-
   #navbar-logo {
     padding-left: 25px;
-  }
-
-  .navbar-item {
-    width: 100%;
   }
 
   .navbar-links {
@@ -118,10 +86,7 @@
     width: 100%;
     display: table;
   }
-  .navbar-toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
+
 }
 
 /* Header */
@@ -167,8 +132,6 @@
 }
 
 .landing-img {
-  /* width: 100%;
-  height: 100%; */
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -309,7 +272,7 @@
   font-size: 100px;
 }
 
-.skills-grid {
+.skills-flex {
   text-align: center;
 }
 
@@ -343,8 +306,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .skills-grid {
-    /* grid-template-columns: 1fr; */
+  .skills-flex {
     display: flex;
     flex-direction: column;
   }
