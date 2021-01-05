@@ -268,6 +268,7 @@
 #about-me-btn {
   color: grey;
   border: none;
+  opacity: 50%;
   border-radius: 20px;
   font-size: 20px;
   text-align: center;
@@ -281,6 +282,7 @@
 
 #about-me-btn:hover {
   background-color: rgb(29, 28, 28);
+  opacity: 99%;
   border: solid;
   color: whitesmoke;
   border-color: rgb(172, 170, 170);
@@ -425,6 +427,7 @@
 
 .projects-right a {
   color: white;
+  opacity: 70%;
   background-color: rgb(2, 85, 2);
   text-decoration: none;
   border: solid;
@@ -438,6 +441,7 @@
 .projects-right a:hover {
   border-color: greenyellow;
   padding: 15px 15px 15px 15px;
+  opacity: 99%;
   transition: all 0.3s ease;
 }
 
@@ -557,6 +561,7 @@
   outline: none;
   color: whitesmoke;
   background-color: rgb(2, 85, 2);
+  opacity: 50%;
   border-radius: 10px;
   padding: 3px 10px 3px 10px;
   transition: all 0.3s ease;
@@ -564,8 +569,9 @@
 
 .tags a:hover {
   border: solid;
+  opacity: 99%;
   color: rgb(212, 209, 209);
-  border-color: greenyellow;
+  border-color: black;
   border-width: 2px;
   transition: all 0.3s ease;
 }
