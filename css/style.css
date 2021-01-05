@@ -568,11 +568,8 @@
 }
 
 .tags a:hover {
-  border: solid;
   opacity: 99%;
   color: rgb(212, 209, 209);
-  border-color: black;
-  border-width: 2px;
   transition: all 0.3s ease;
 }
 
