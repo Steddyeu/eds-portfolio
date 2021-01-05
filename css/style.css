@@ -320,10 +320,10 @@
 }
 
 @media screen and (max-width: 468px) {
-  .skills-container {
+  /* .skills-container {
     text-align: center;
     margin-bottom: 100px;
-  }
+  } */
 
   .skills-left {
     padding: 0 24px;
@@ -444,6 +444,7 @@
   .projects-right {
     margin-bottom: 60px;
   }
+
 }
 
 @media screen and (max-width: 468px) {
@@ -548,6 +549,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: scroll;
+    align-items: center;
   }
 
   card:hover {
@@ -622,5 +624,14 @@
 @media screen and (max-width: 1000px) {
   #email {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+ #email {
+    font-size: 25px;
+  }
+  .footer-container h1 {
+    font-size: 50px;
   }
 }
