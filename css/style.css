@@ -330,7 +330,7 @@
   background-color: rgb(44, 42, 42);
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 #dev-icon {
@@ -569,7 +569,7 @@
 
 .tags a:hover {
   opacity: 99%;
-  color: rgb(212, 209, 209);
+  color: whitesmoke;
   transition: all 0.3s ease;
 }
 
@@ -617,7 +617,7 @@
   border-radius: 5px;
 }
 
-/* -----------------SLIDING CARDS^--------------------------------------- */
+/* -------------------------------------------------------- */
 
 /* CONTACT PAGE*/
 
