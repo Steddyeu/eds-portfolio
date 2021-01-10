@@ -7,7 +7,6 @@
   list-style-type: none;
 }
 
-
 /* Nav-Bar */
 
 .navbar {
@@ -86,9 +85,24 @@
     width: 100%;
     display: table;
   }
-
 }
 
+@media screen and (max-width: 615px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
 /* Header */
 
 .landing-page {
@@ -444,7 +458,6 @@
   .projects-right {
     margin-bottom: 60px;
   }
-
 }
 
 @media screen and (max-width: 468px) {
@@ -628,7 +641,7 @@
 }
 
 @media screen and (max-width: 541px) {
- #email {
+  #email {
     font-size: 25px;
   }
   .footer-container h1 {
