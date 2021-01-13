@@ -104,6 +104,12 @@
     padding: 0 50px;
   }
 }
+
+@media screen and (max-width: 382px) {
+  #navbar-logo {
+  font-size: 1.7em;
+}
+}
 /* Header */
 
 .landing-page {
