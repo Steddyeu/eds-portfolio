@@ -50,27 +50,27 @@ header {
 .card {
   border-radius: 1%;
   border: solid;
-  border-color: gainsboro;
+  border-color: rgb(7, 7, 7);
   border-width: 1px;
   padding: 15px 15px 15px 15px;
   margin-bottom: 20px;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: black;
-  background-color: whitesmoke;
+  color: rgb(228, 224, 224);
+  background-color: rgb(153, 152, 153);
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  border-color: goldenrod;
-  border-width: 3px;
+  border-color: rgb(53, 52, 52);
+  border-width: 5px;
   transition: all 0.3s ease;
 }
 /* -------------------------------- */
 .card-heading {
   text-decoration: underline;
-  color: black;
+  color: rgb(104, 101, 101);
   font-size: 30px;
 }
 
