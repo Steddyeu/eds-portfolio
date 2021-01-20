@@ -2,6 +2,7 @@ body {
   background: rgb(17, 1, 19);
   display: flex;
   font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
 }
 
 #video {
@@ -17,7 +18,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1143px) {
   body {
     display: flex;
     flex-direction: column;
