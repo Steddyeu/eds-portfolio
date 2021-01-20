@@ -1,0 +1,21 @@
+body {
+  background: rgb(17, 1, 19);
+  display: flex;
+}
+
+#video {
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.video-text {
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+
+@media screen and (max-width: 468px) {
+ 
+}
