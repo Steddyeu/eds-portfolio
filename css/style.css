@@ -34,19 +34,18 @@
 
 #navbar-logo {
   color: green;
-  /* background-color: #ff8177; */
-  /* background: linear-gradient(to bottom, #080808, #14d814); */
-  background-size: 100%;
-  /* -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent; */
   display: flex;
   align-items: center;
+  background-size: 100%;
+  display: flex;
   cursor: pointer;
   text-decoration: none;
   font-size: 2em;
   transition: all 0.3s ease;
+  margin-right: 30px;
+}
+#hide {
+  color: rgb(43, 44, 44);
 }
 
 .navbar-links {
@@ -89,26 +88,28 @@
 }
 
 @media screen and (max-width: 615px) {
-  .navbar-links {
-    display: none;
-  }
-
   .navbar-container {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    z-index: 1;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+  }
+  .navbar-links {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 382px) {
   #navbar-logo {
-  font-size: 1.7em;
-}
+    font-size: 1.7em;
+  }
 }
 /* Header */
 
