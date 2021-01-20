@@ -1,6 +1,7 @@
 body {
   background: rgb(17, 1, 19);
   display: flex;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 #video {
@@ -13,9 +14,12 @@ body {
 .video-text {
   color: aliceblue;
   margin-left: 10px;
+  width: 100%;
 }
 
-
-@media screen and (max-width: 468px) {
- 
+@media screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
