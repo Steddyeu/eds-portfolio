@@ -10,8 +10,8 @@ body {
 
 #video {
   border: solid;
-  border-color: white;
-  border-width: 1px;
+  border-color: rgb(160, 156, 156);
+  border-width: 3px;
   border-radius: 5px;
 }
 
@@ -33,11 +33,20 @@ h1 {
 }
 p {
   border: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 5px;
   padding: 15px 5px 15px 5px;
+  transition: all 0.3s ease;
 }
- a {
+
+p:hover {
+  border-color: white;
+  color: rgb(193, 198, 201);
+  transition: all 0.3s ease;
+  background: rgb(30, 2, 34);
+}
+
+a {
   text-decoration: none;
   outline: none;
   color: whitesmoke;
@@ -48,7 +57,7 @@ p {
   transition: all 0.3s ease;
 }
 
- a:hover {
+a:hover {
   opacity: 99%;
   color: whitesmoke;
   transition: all 0.3s ease;
