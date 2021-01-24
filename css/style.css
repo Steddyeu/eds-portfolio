@@ -88,23 +88,25 @@
  
 }
 
+@media screen and (max-width: 879px) {
+  
+  #navbar-logo {
+font-size: 30px;  
+}
+
+.navbar-links {
+   font-size: 15px;
+  }
+ 
+}
+
 @media screen and (max-width: 615px) {
-  .navbar-container {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
   .navbar-links {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    font-size: 10px;
   }
+  #navbar-logo {
+font-size: 22px;  
+}
 
 }
 
