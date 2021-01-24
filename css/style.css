@@ -119,6 +119,9 @@ font-size: 16px;
   height: 80px;
   width: 100%;
 }
+#contact {
+  display: none;
+}
 }
 /* Header */
 
