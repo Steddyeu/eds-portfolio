@@ -107,6 +107,9 @@ font-size: 10px;
 font-size: 16px;  
 }
 
+#hide-surname {
+  display: none;
+}
 }
 
 @media screen and (max-width: 382px) {
