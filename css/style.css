@@ -104,10 +104,10 @@ font-size: 30px;
 
 @media screen and (max-width: 615px) {
   .navbar-links {
-    font-size: 10px;
+    font-size: 8px;
   }
   #navbar-logo {
-font-size: 22px;  
+font-size: 10px;  
 }
 .navbar-container {
    display: flex;
