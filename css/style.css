@@ -64,6 +64,8 @@
   transition: all 0.3s ease;
 }
 
+
+
 @media screen and (max-width: 960px) {
   .navbar-container {
     display: flex;
@@ -106,6 +108,12 @@ font-size: 30px;
   }
   #navbar-logo {
 font-size: 22px;  
+}
+.navbar-container {
+   display: flex;
+  justify-content: left;
+  height: 80px;
+  width: 100%;
 }
 
 }
