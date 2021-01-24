@@ -44,9 +44,6 @@
   transition: all 0.3s ease;
   margin-right: 30px;
 }
-#hide {
-  color: rgb(43, 44, 44);
-}
 
 .navbar-links {
   color: whitesmoke;
@@ -93,7 +90,7 @@
 @media screen and (max-width: 879px) {
   
   #navbar-logo {
-font-size: 10px;  
+font-size: 20px;  
 }
 
 .navbar-links {
