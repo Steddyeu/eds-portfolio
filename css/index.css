@@ -61,8 +61,6 @@
   transition: all 0.3s ease;
 }
 
-
-
 @media screen and (max-width: 960px) {
   .navbar-container {
     display: flex;
@@ -84,26 +82,22 @@
     width: 100%;
     display: table;
   }
- 
 }
 
 @media screen and (max-width: 879px) {
-  
   #navbar-logo {
-font-size: 20px;  
-}
-
-.navbar-links {
-   font-size: 8px;
+    font-size: 20px;
   }
- 
+
+  .navbar-links {
+    font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 615px) {
   #navbar-logo {
-font-size: 16px;  
-}
-
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 382px) {
@@ -111,17 +105,15 @@ font-size: 16px;
     font-size: 15px;
   }
   .navbar-container {
-   display: flex;
-  justify-content: left;
-  height: 80px;
-  width: 100%;
-}
-#contact {
-  display: none;
-}
-#hide-surname {
-  display: none;
-}
+    display: flex;
+    justify-content: left;
+    height: 80px;
+    width: 100%;
+  }
+  #contact {
+    display: none;
+  }
+ 
 }
 /* Header */
 
@@ -475,8 +467,9 @@ font-size: 16px;
     padding-left: 0px;
   }
 
-  .projects-right {
+  .projects-right p {
     margin-bottom: 60px;
+    font-size: 0.5em;
   }
 }
 
