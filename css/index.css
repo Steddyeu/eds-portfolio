@@ -38,7 +38,6 @@
   align-items: center;
   background-size: 100%;
   display: flex;
-  cursor: pointer;
   text-decoration: none;
   font-size: 2em;
   transition: all 0.3s ease;
@@ -66,9 +65,7 @@
     display: flex;
     justify-content: space-between;
     height: 80px;
-    z-index: 1;
     width: 100%;
-    max-width: 1300px;
     padding: 0;
   }
 
@@ -76,12 +73,6 @@
     padding-left: 25px;
   }
 
-  .navbar-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
 }
 
 @media screen and (max-width: 879px) {
@@ -95,15 +86,16 @@
 }
 
 @media screen and (max-width: 615px) {
+ 
   #navbar-logo {
-    font-size: 1em;
+    display: none;
+  }
+  #contact {
+    display: none;
   }
 }
 
 @media screen and (max-width: 382px) {
-  #navbar-logo {
-    display: none;
-  }
   .navbar-container {
     display: flex;
     justify-content: left;
@@ -116,6 +108,8 @@
     bottom: 0;
     width: 100%;
   }
+
+
 }
 /* Header */
 
