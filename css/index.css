@@ -10,7 +10,7 @@
 /* Nav-Bar */
 
 .navbar {
-  background: rgb(49, 49, 49);
+  background: rgb(14, 13, 13);
   height: 3em;
   display: flex;
   justify-content: center;
@@ -102,14 +102,20 @@
 
 @media screen and (max-width: 382px) {
   #navbar-logo {
-display: none ;  }
+    display: none;
+  }
   .navbar-container {
     display: flex;
     justify-content: left;
     height: 80px;
     width: 100%;
   }
-  
+
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 /* Header */
 
@@ -467,7 +473,6 @@ display: none ;  }
     margin-bottom: 60px;
     font-size: 0.5em;
   }
-
 }
 
 @media screen and (max-width: 468px) {
@@ -478,10 +483,10 @@ display: none ;  }
   .projects-container h1 {
     font-size: 20px;
   }
-  
-   .projects-right a {
-  font-size: 0.7em;
-}
+
+  .projects-right a {
+    font-size: 0.7em;
+  }
 }
 /* -----------------SLIDING CARDS--------------------------------------- */
 
