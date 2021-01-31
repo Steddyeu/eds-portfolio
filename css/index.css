@@ -10,8 +10,8 @@
 /* Nav-Bar */
 
 .navbar {
-  background: rgb(43, 44, 44);
-  height: 80px;
+  background: rgb(49, 49, 49);
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,6 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-index: 1;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
