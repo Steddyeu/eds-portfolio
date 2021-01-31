@@ -101,18 +101,14 @@
 
 @media screen and (max-width: 382px) {
   #navbar-logo {
-    font-size: 15px;
-  }
+display: none ;  }
   .navbar-container {
     display: flex;
     justify-content: left;
     height: 80px;
     width: 100%;
   }
-  #contact {
-    display: none;
-  }
- 
+  
 }
 /* Header */
 
