@@ -134,6 +134,7 @@
 
 .left-column h1 {
   font-size: 90px;
+  text-align: center;
 }
 
 .left-column p {
@@ -155,8 +156,23 @@
 
 .landing-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
+}
+
+
+#video-container {
+  border: solid;
+  border-color: rgb(75, 73, 73);
+  border-width: 4px;
+  border-radius: 5px;
+  margin-left: 1em;
+  background-color: rgb(75, 73, 73);
+}
+
+#video{
+width: 100%;
+height: auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -174,6 +190,21 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+ #video-container {
+  width: 18em;
+  height: 11em;
+}
+
+.left-column h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+ .left-column p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
 /* ABOUT ME */
 
 .main-section {
@@ -211,11 +242,6 @@
 .main-text p,
 .main-text2 p {
   line-height: 2.2;
-}
-
-.about-me-img {
-  width: 430px;
-  height: 600px;
 }
 
 @media screen and (max-width: 1000px) {
