@@ -1,5 +1,6 @@
 # Eds-portfolio
-font-awesome: ``` npm install --save @fortawesome/fontawesome-free ```
+
+Hosted link: https://edwardcowell.netlify.app/ 
 
 All pages are fully responsive and can fit multiple screen sizes. 
 
