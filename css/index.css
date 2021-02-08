@@ -194,8 +194,8 @@ outline: none;
 
 @media screen and (max-width: 700px) {
  #video-container {
-  width: 18em;
-  height: 11em;
+  width: 80%;
+  height: auto;
 }
 
 .left-column h1 {
@@ -205,8 +205,26 @@ outline: none;
  .left-column p {
     font-size: 1.5em;
     text-align: center;
-  }
 }
+
+}
+
+@media screen and (max-width: 338px) {
+ #video-container {
+ border: none;
+}
+
+.left-column h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+ .left-column p {
+    font-size: 2em;
+    text-align: center;
+}
+
+}
+
 /* ABOUT ME */
 
 .main-section {
